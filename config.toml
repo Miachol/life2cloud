@@ -1,0 +1,70 @@
+baseurl = "www.life2cloud.com/"
+relativeurls = true
+languageCode = "en-us"
+title = "Jianfeng Li | 李剑峰"
+theme = "hugo-lithium-theme"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+hasCJKLanguage = true
+enableEmoji = true
+rssLimit = 30
+
+[permalinks]
+      cn = "/cn/:year/:month/:slug/"
+      en = "/en/:year/:month/:slug/"
+
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Blog"
+    url = "/en/"
+    weight = 2
+[[menu.main]]
+    name = "博客"
+    url = "/cn/"
+    weight = 3
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+ [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 5
+  [[menu.main]]
+    name = "About"
+    url = "/en/about/"
+    weight = 6
+[[menu.main]]
+    name = "关于"
+    url = "/cn/about/"
+    weight = 7
+
+
+[params]
+    description = "A website built through Hugo and blogdown."
+    dateFormat = "2006/01/02"
+    customCSS = ["css/custom.css"]
+    customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml", "tex"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.1"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+[social]
+    github  = "https://github.com/Miachol/"

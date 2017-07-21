@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+
+<h1 style="text-align:center">{{ .Title }}</h1>
+
+<main class="content" role="main">
+<ul class="terms">
+  {{ range $key, $value := .Data.Terms }}
+  <li>
+    <a href='{{ (print "/" $.Data.Plural "/" $key) | relURL }}'>
+      {{ $key }}
+    </a>
+    ({{ len $value }})
+  </li>
+  {{ end }}
+</ul>
+</main>
+
+{{ partial "footer.html" . }}

@@ -31,18 +31,26 @@ rssLimit = 30
     name = "Tags"
     url = "/tags/"
     weight = 4
- [[menu.main]]
+[[menu.main]]
     name = "Categories"
     url = "/categories/"
     weight = 5
-  [[menu.main]]
+[[menu.main]]
+    name = "Vitae"
+    url = "/en/vitae/"
+    weight = 6
+[[menu.main]]
+    name = "简历"
+    url = "/cn/vitae/"
+    weight = 7
+[[menu.main]]
     name = "About"
     url = "/en/about/"
-    weight = 6
+    weight = 8
 [[menu.main]]
     name = "关于"
     url = "/cn/about/"
-    weight = 7
+    weight = 9
 
 
 [params]
@@ -73,7 +81,7 @@ rssLimit = 30
     [params.author]
     en = "Jianfeng Li"
     cn = "李剑峰"
-    
+
     [params.lang.edit]
     en = "Suggest an edit of this page"
     cn = "编辑本页"

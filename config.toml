@@ -24,34 +24,33 @@ rssLimit = 30
     url = "/en/"
     weight = 2
 [[menu.main]]
-    name = "博客"
-    url = "/cn/"
-    weight = 3
-[[menu.main]]
     name = "Tags"
     url = "/tags/"
-    weight = 4
+    weight = 3
 [[menu.main]]
     name = "Categories"
     url = "/categories/"
-    weight = 5
+    weight = 4
 [[menu.main]]
     name = "Vitae"
     url = "/en/vitae/"
-    weight = 6
-[[menu.main]]
-    name = "简历"
-    url = "/cn/vitae/"
-    weight = 7
+    weight = 5
 [[menu.main]]
     name = "About"
     url = "/en/about/"
+    weight = 6
+[[menu.main]]
+    name = "博客"
+    url = "/cn/"
+    weight = 7
+[[menu.main]]
+    name = "简历"
+    url = "/cn/vitae/"
     weight = 8
 [[menu.main]]
     name = "关于"
     url = "/cn/about/"
     weight = 9
-
 
 [params]
     description = "Personal website of Jianfeng Li; 李剑峰的个人网站"

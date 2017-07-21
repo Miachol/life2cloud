@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "Jianfeng Li | 李剑峰"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
-disqusShortname = ""
+disqusShortname = "life2cloud"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 hasCJKLanguage = true
 enableEmoji = true
@@ -46,7 +46,8 @@ rssLimit = 30
 
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = "Personal website of Jianfeng Li; 李剑峰的个人网站"
+    disqusURL = "http://www.life2cloud.com"
     dateFormat = "2006/01/02"
     customCSS = ["css/custom.css"]
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
@@ -66,5 +67,13 @@ rssLimit = 30
     height = 50
     alt = "Logo"
 
-[social]
-    github  = "https://github.com/Miachol/"
+    [params.social]
+    github  = "Miachol"
+
+    [params.author]
+    en = "Jianfeng Li"
+    cn = "李剑峰"
+    
+    [params.lang.edit]
+    en = "Suggest an edit of this page"
+    cn = "编辑本页"

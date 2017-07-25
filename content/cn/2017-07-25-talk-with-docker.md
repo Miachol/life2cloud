@@ -57,6 +57,11 @@ docker build -t life2cloud/gatk3:3.7-0 .
 
 # 打标签：
 docker tag ubuntu:15.10 yours_repo/ubuntu:v3
+
+# Login and push your repo to docker hub
+docker login
+
+docker push yours_repo/ubuntu:v3
 ```
 更多Docker的操作以及配置见[官方文档](https://docs.docker.com/engine/userguide/)
 ## Dockerfile

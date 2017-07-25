@@ -107,6 +107,21 @@ Docker容器可大可小（alpine似乎正在成为一种最小化构建Docker�
 - 用“小”容器够建不需要太多外界依赖数据的各类应用（BWA、SAMtools .etc），这些应用往往在编译或安装之后就可以开始使用；
 - 还有一类就是各种大型的网页应用、依赖软件众多的Pipeline，这类软件应用配置起来最为麻烦，或许在一个容器内完成会更加方便（数据库除外）,或者是使用[compose](https://github.com/docker/compose)来进行组合多个容器构建应用。
 
+## Docker的不便之处
+
+- Docker运行需要ROOT权限（以后也一定需要），对于大多数非云计算的高性能计算而言，只能够使用conda等工具完成相应分析环境部署
+- Docker容易带来一些额外的存储，如重复的依赖、重复的数据等等。特别地，如果软件开发人员不能够很好的拆分应用到不同容器中，将会带来很多冗余文件，对于硬盘紧张的用户来说可能压力会比较大
+
+## 使用非ROOT用户使用docker
+
+```bash
+sudo groupadd docker
+sudo gpasswd -a ${USER} docker
+# sudo service docker restart
+sudo systemctl restart docker
+# 退出当前用户，重新登录
+```
+
 ## Docker的一些常用链接
 - [Docker Github](https://github.com/docker)
 - [Docker Home](https://www.docker.com/)

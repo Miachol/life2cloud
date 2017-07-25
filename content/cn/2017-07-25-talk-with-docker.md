@@ -61,7 +61,7 @@ docker tag ubuntu:15.10 yours_repo/ubuntu:v3
 更多Docker的操作以及配置见[官方文档](https://docs.docker.com/engine/userguide/)
 ## Dockerfile
 
-Dockerfile是一种用于自动化构建Docker Image的配置文件（YAML格式），它可以让其他用户知道自己正在使用的容器是如何构建的，自己有没有可修改或定制的地方。如果，你正在使用的Image是由其他用户通过交互式操作构建的:
+Dockerfile是一种用于自动化构建Docker Image的配置文件，它可以让其他用户知道自己正在使用的容器是如何构建的，自己有没有可修改或定制的地方。如果，你正在使用的Image是由其他用户通过交互式操作构建的:
 
 ```bash
 docker run -t -i ubuntu:15.10 /bin/bash

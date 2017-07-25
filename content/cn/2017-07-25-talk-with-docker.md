@@ -103,6 +103,7 @@ ENTRYPOINT ["/usr/bin/bwa"]
 ## Docker的大与小
 
 Docker容器可大可小（alpine似乎正在成为一种最小化构建Docker容器的标准）：
+
 - 用“小”容器够建不需要太多外界依赖数据的各类应用（BWA、SAMtools .etc），这些应用往往在编译或安装之后就可以开始使用；
 - 还有一类就是各种大型的网页应用、依赖软件众多的Pipeline，这类软件应用配置起来最为麻烦，或许在一个容器内完成会更加方便（数据库除外）,或者是使用[compose](https://github.com/docker/compose)来进行组合多个容器构建应用。
 

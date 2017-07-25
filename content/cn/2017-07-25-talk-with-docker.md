@@ -19,7 +19,7 @@ tags:
 
 Docker是近年来新起的一种应用（计算机）分发工具，它极大的方便了人们获取、构建、发布软件应用。
 
-在生物信息学领域，很重要的一环就是开发用于数据分析的工具或软件包。在没有Docker之前，人们总是要对各类软件的错综复杂的依赖问题头痛不已（事实上Conda/Bioconda等目前被广泛应用的软件包管理工具总是会出现一些问题）。现在，Docker似乎为生物信息学相关从业人员提供了一个释放自己的途径，我相信在不久的将来，使用Docker进行生物信息学应用、软件的发布将成为共识。
+在生物信息学领域，很重要的一环就是开发用于数据分析的工具或软件包。在没有Docker之前，人们总是要对各类软件的错综复杂的依赖问题头痛不已（事实上[Conda](https://conda.io/docs/intro.html)/[Bioconda](http://bioconda.github.io/)等目前被广泛应用的软件包管理工具总是会出现一些问题）。现在，Docker似乎为生物信息学相关从业人员提供了一个释放自己的途径，我相信在不久的将来，使用Docker进行生物信息学应用、软件的发布将成为共识。
 
 ## 目的
 
@@ -58,7 +58,7 @@ docker build -t life2cloud/gatk3:3.7-0 .
 # 打标签：
 docker tag ubuntu:15.10 yours_repo/ubuntu:v3
 ```
-
+更多Docker的操作以及配置见[官方文档](https://docs.docker.com/engine/userguide/)
 ## Dockerfile
 
 Dockerfile是一种用于自动化构建Docker Image的配置文件（YAML格式），它可以让其他用户知道自己正在使用的容器是如何构建的，自己有没有可修改或定制的地方。如果，你正在使用的Image是由其他用户通过交互式操作构建的:

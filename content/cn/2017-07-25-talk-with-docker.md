@@ -13,7 +13,7 @@ tags:
 
 ## Docker与生物信息学
 
-![](F:/repositories/ljf/Writing-material/blog/images/2017-07-25-talk-with-docker/docker.jpg)
+![](https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-07-25-talk-with-docker/docker.jpg)
 
 Docker是近年来新起的一种应用（计算机）分发工具，它极大的方便了人们获取、构建、发布软件应用。
 

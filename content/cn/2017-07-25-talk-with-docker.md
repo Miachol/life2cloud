@@ -72,7 +72,7 @@ docker commit -m "Added r-base" -a "Author" \
 
 那么你是很难知道容器里做了哪些修改，有没有嵌入恶意代码，所以，我们需要一个文件记录用户所有的操作，并让其他用户可以便于查看或修改 ([详细讲解](https://docs.docker.com/engine/reference/builder/))：
 
-```yaml
+```bash
 FROM alpine
 
 MAINTAINER life2cloud lee_jianfeng@sjtu.edu.cn

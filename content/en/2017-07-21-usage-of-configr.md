@@ -1,5 +1,5 @@
 ---
-title: Usage of configr
+title: configr | Usage of configr
 author: Jianfeng Li
 date: '2017-07-21'
 slug: usage-of-configr

@@ -1,5 +1,5 @@
 ---
-title: Configuration file types
+title: configr | Configuration file types
 author: Jianfeng Li
 date: '2017-07-21'
 slug: configuration-filetypes

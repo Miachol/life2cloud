@@ -1,5 +1,5 @@
 ---
-title: "Introduction to BioInstaller"
+title: "BioInstaller | Introduction to BioInstaller"
 author: "Jianfeng Li"
 date: "2017-07-25"
 output: rmarkdown::html_vignette

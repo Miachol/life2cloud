@@ -1,5 +1,5 @@
 ---
-title: SCI论文插图的那些事
+title: SCI | SCI论文插图的那些事
 author: Jianfeng Li
 date: '2017-07-21'
 slug: sci-figures
@@ -9,7 +9,7 @@ tags:
   - AI
   - illustrator
   - Photoshop
-  - SCI illustrations
+  - SCI
 ---
 
 

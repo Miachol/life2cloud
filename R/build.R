@@ -15,7 +15,10 @@ build_one = function(io, external = FALSE)  {
 
 # external Rmd files
 files = read.csv('R/external_Rmd.csv', strip.white = TRUE)
-files = cbind(as.matrix(files), external = TRUE)
+if (nrow(files) != 0) {
+  files = cbind(as.matrix(files), external = TRUE)
+}
+
 # Rmd files under the content directory
 rmds = list.files('content', '[.]Rmd$', recursive = TRUE, full.names = TRUE)
 if (length(rmds)) {

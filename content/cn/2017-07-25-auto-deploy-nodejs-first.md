@@ -52,14 +52,23 @@ conda create -n nodejs python=2.7
 source activate nodejs
 conda install nodejs
 ```
-在完成Node.js安装后，得到可执行文件`node`和包管理器`npm`，然后就是安装依赖包用于相关Webhook解析和监控：
+在完成Node.js安装后，得到可执行文件`node`和包管理器`npm`，然后就是安装依赖包`github-webhook-handler`用于相关Webhook解析和监控。
+
+特别要注意的是，如果nodejs是以root安装的，可能会导致没有权限安装额外包。
+
+如果是以conda或自己编译安装，需要设置环境变量`NODE_PATH`：
+
+```bash
+# ~/.bashrc
+export NODE_PATH="~/.miniconda3/lib/node_modules/"
+```
 
 ```bash
 # 国外镜像
-npm install -g coding-webhook-handler
+npm install -g github-webhook-handler
 # 推荐国内镜像
 npm install -g cnpm --registry=http://r.cnpmjs.org
-cnpm install -g coding-webhook-handler
+cnpm install -g github-webhook-handler
 ```
 
 在完成上述软件包部署之后你就可以正式开始进行网站Webhook监听和自动部署。
@@ -121,8 +130,8 @@ git pull
 当然，在部署过程中还需要做一些端口转发工作，比如将监听的端口映射到网页路径上去，我推荐用nginx服务，下面是实例的配置文件 `/etc/nginx/conf.d/your_blog.conf`。另外，需要保证`include /etc/nginx/conf.d/*.conf;`存在于`/etc/nginx/nginx.conf`文件中。
 
 ```bash
-upstream your_blog {
-    server your_domain:your_port;
+upstream your_blog_api {
+    server localhost:your_port;
 }
 
 server
@@ -131,9 +140,9 @@ server
   server_name  your_domain;
   client_max_body_size 10G;
 
-  location /blog_api
+  location /your_blog_api
   {
-    proxy_pass      http://your_blog/;
+    proxy_pass      http://your_blog_api/;
     proxy_redirect          off;
     proxy_set_header        Host $host;
     proxy_set_header        X-Real-IP $remote_addr;

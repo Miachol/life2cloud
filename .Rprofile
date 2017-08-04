@@ -1,6 +1,6 @@
 options(
   blogdown.method = 'custom', digits = 4, servr.daemon = TRUE, formatR.indent = 2,
-  blogdown.publishDir = '../public', blogdown.yaml.empty = FALSE,
+  blogdown.publishDir = 'html', blogdown.yaml.empty = FALSE,
   blogdown.subdir = 'en'
 )
 

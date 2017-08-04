@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+html
 public
 static/figures
 blogdown

@@ -18,7 +18,6 @@ vignette: >
   %\VignetteIndexEntry{Introduction to BioInstaller}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
-from_Rmd: yes
 ---
 
 

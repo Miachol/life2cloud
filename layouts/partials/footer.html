@@ -11,7 +11,7 @@
 
         </ul>
 		<ul class="footer-links">
-		  <li style="#333333">沪ICP备17035267号</li>
+		  <li style="#333333"><a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备17035267号</a></li>
         </ul>
 		
       </footer>
@@ -19,6 +19,15 @@
     {{ range .Site.Params.customJS }}
     <script async src="{{ . | relURL }}"></script>
     {{ end }}
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?1a51ddf2307df4abb0cfe9877cbd60b3";
+			var s = document.getElementsByTagName("script")[0]; 
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
     {{ partial "footer_highlightjs" . }}
     {{ partial "footer_mathjax" . }}
     {{ template "_internal/google_analytics.html" . }}

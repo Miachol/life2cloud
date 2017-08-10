@@ -10,7 +10,6 @@ tags:
   - JSON
   - TOML
   - INI
-from_Rmd: yes
 ---
 
 

@@ -11,24 +11,31 @@
 
 	{{ if or (in (slice "en" "cn") .Section) .Params.author }}
 	<div class="article-date">
-	  <span>{{ with or (or .Params.author (index .Site.Params.author .Section)) "" }} {{  print . " · " }} {{ end }} {{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat ) }}</span>
+	  {{ if or (in (slice "cn") .Section) }}
+	  <span>{{ with or (or .Params.author (index .Site.Params.author .Section)) "" }} {{  print . " · " }} {{ end }} {{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat ) }} · {{ .ReadingTime }} 分钟 · {{ .WordCount }} 字 ·
+	     <span id="busuanzi_container_page_pv"><i class="fa fa-spinner fa-spin"></i>
+		     阅读次数 <span id="busuanzi_value_page_pv"></span>
+		 </span>
+	  {{ end }}
+	  {{ if or (in (slice "en") .Section) }}
+	  <span>{{ with or (or .Params.author (index .Site.Params.author .Section)) "" }} {{  print . " · " }} {{ end }} {{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat ) }} · {{ .ReadingTime }} min · {{ .WordCount }} words ·
+	      <span id="busuanzi_container_page_pv"><i class="fa fa-spinner fa-spin"></i>
+	          Hits <span id="busuanzi_value_page_pv"></span>
+	      </span>
+	  {{ end }}
 	  <span class="article-toolbar">
 		{{ with .Section }}
 		<a href="/{{ . }}/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss" aria-hidden="true" title="RSS feed"></i></a>
 		{{ end }}
-		<a href="https://twitter.com/home?{{ (querify "status" (print .Title " " .Permalink " via @" .Site.Params.social.twitter )) | safeURL }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true" title="Share via Twitter"></i></a>
-		<a href="http://service.weibo.com/share/share.php?{{ (querify "content" "utf-8" "url" .Permalink "title" (print .Title " @" .Site.Params.social.weibo)) | safeURL }}" target="_blank"><i class="fa fa-weibo" aria-hidden="true" title="分享到新浪微博"></i></a>
 		<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fa fa-cc" aria-hidden="true" title="Attribution-NonCommercial-ShareAlike 4.0 International"></i></a>
 		{{ with .Site.Params.githubContentURL }}
 		{{ $.Scratch.Set "filePath" $.File.Path }}
 		{{ if $.Params.from_Rmd }}
 		{{ $.Scratch.Set "filePath" (replaceRE "[.]md$" ".Rmd" $.File.Path) }}
 		{{ $.Scratch.Set "filePath" (replace ($.Scratch.Get "filePath") "\\" "/") }}
-		{{ $.Scratch.Set "filePath" (replaceRE ($.Scratch.Get "filePath") "\\" "/") }}
 		{{ end }}
 		<a href="{{ or $.Params.githubEditURL  (print .  ($.Scratch.Get "filePath")) }}"><i class="fa fa-pencil-square-o" aria-hidden="true" title="{{ default (index $.Site.Params.lang.edit.en) (index $.Site.Params.lang.edit $.Section) }}"></i></a>
 		{{ end }}
-
 		</span>
 	</div>
 	{{ end }}
@@ -36,6 +43,11 @@
     <div class="article-content">
       {{ .Content }}
     </div>
+	{{ partial "prev_next.html" . }}
+	{{ if or (in (slice "en" "cn") .Section) }}
+	<div class="social-share" data-mode="prepend">
+    </div>
+	{{ end }}
   </article>
 
   {{ partial "disqus.html" .}}
@@ -43,3 +55,4 @@
 </main>
 
 {{ partial "footer.html" . }}
+

@@ -1,5 +1,5 @@
-baseurl = "www.life2cloud.com/"
-relativeurls = true
+baseurl = "/"
+relativeurls = false
 languageCode = "en-us"
 title = "Jianfeng Li | 李剑峰"
 theme = "hugo-lithium-theme"
@@ -54,10 +54,12 @@ rssLimit = 30
 
 [params]
     description = "Personal website of Jianfeng Li; 李剑峰的个人网站"
-    disqusURL = "http://www.life2cloud.com"
+    disqusURL = "https://www.life2cloud.com"
     dateFormat = "2006/01/02"
-    customCSS = ["css/custom.css"]
-    customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js", "js/math-code.js"]
+    customCSS = ["css/custom.css", "css/share.min.css"]
+    customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", 
+                "js/fix-footnote.js", "js/math-code.js",
+		"js/qrcode.js", "js/social-share.js", "js/busuanzi.pure.mini.js"]
     githubContentURL = "https://github.com/Miachol/life2cloud/edit/master/content/"
 
     # options for highlight.js (version, additional languages, and theme)

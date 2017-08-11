@@ -1,5 +1,4 @@
-baseurl = "/"
-relativeurls = false
+baseurl = "https://life2cloud.com/"
 languageCode = "en-us"
 title = "Jianfeng Li | 李剑峰"
 theme = "hugo-lithium-theme"

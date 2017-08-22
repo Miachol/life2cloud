@@ -4,8 +4,7 @@ author: Jianfeng Li
 date: '2017-07-25'
 slug: nodejs-auto-deploy-blog
 categories:
-  - Computer skill
-  - Web
+  - tutorial
 tags:
   - blog
   - guide

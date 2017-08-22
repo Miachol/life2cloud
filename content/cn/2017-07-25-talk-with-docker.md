@@ -4,7 +4,7 @@ author: Jianfeng Li
 date: '2017-07-25'
 slug: talk-with-docker
 categories:
-  - Computer skill
+  - tutorial
 tags:
   - docker
   - guide

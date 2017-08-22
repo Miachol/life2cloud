@@ -4,7 +4,7 @@ author: Jianfeng Li
 date: '2017-07-21'
 slug: sci-figures
 categories:
-  - Computer skill
+  - tutorial
 tags:
   - AI
   - illustrator

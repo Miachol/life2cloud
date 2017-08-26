@@ -111,7 +111,7 @@ PeCan Data Portal主要支持八种与基因突变/基因表达数据可视化�
 
 对于有外显子、全基因组数据分析经验的人来说，肯定不会陌生。通常意义上的基因突变模式图就是通过一维序列展示基因、蛋白，然后将发生基因突变的位点标记在基因序列或者蛋白序列上，在蛋白序列上我们可以再将一些已知的结构域(区间)用不同的颜色标记出。另外一种是三维模式图，它与一维突变模式图相比，包含了基因的三维结构。
 
-PeCan Data Portal提供的ProteinPaint工具目前只能用来画**一维的基因突变模式图**，这也是这个工具的核心功能之一，效果图见图一，如果你喜欢，请[点击试用](https://pecan.stjude.org/proteinpaint/TP53)。
+PeCan Data Portal提供的ProteinPaint工具目前只能用来画**一维的基因突变模式图**，这也是这个工具的核心功能之一，效果图见图一，[点击试用](https://pecan.stjude.org/proteinpaint/TP53)。
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig1.png">
@@ -119,7 +119,7 @@ PeCan Data Portal提供的ProteinPaint工具目前只能用来画**一维的基�
 <b>图一</b> 基因突变模式图
 </div>
 
-ProteinPaint的基因突变模式图可以说是目前市面上最好看的一种，支持SNVs、INDELs、以及融合基因的蛋白编码区的可视化，配色极佳，如果你想自己开发相关工具，可以参考他们对不同结构域以及突变类型的颜色信息。
+ProteinPaint的基因突变模式图可以说是目前市面上最好看的一种，支持SNVs、INDELs、以及融合基因的蛋白编码区的可视化，配色极佳，如果你想自己开发相关工具，可以参考该工具使用的颜色主题。
 
 **编码区基因突变类型：**
 
@@ -135,7 +135,7 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 **Tips：**
 
 - 注意一下Somatic突变（体细胞突变）和Germline突变（生殖细胞突变）的差异，前者主要存在于肿瘤组织和正常组织的配对研究，特异发生在肿瘤组织中的基因变异我们常称作Somatic突变。而那些在正常对照组织中出现的变异，我们则称为Germline突变，它是可遗传的，一般常见于各类遗传病研究中。
-- ProteinPaint蛋白质结构域的数据主要来自[NCBI CDD](https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml)数据库，如果你觉得他们的结构域不是你想要的，你也可以添加自己设定的结构域信息。
+- ProteinPaint蛋白质结构域的数据主要来自[NCBI CDD](https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml)和[Pfarm](http://pfam.xfam.org/)数据库，如果你觉得他们的结构域不是你想要的，你也可以添加自己设定的结构域信息。
 - 除了圣犹大儿童研究医院自己课题组的数据之外，ProteinPaint已经内置了最新版COSMIC数据库和ClinVar数据库，非常方便用户来进行整合分析。
 
 
@@ -155,13 +155,13 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 <p><b>图三</b> 融合基因模式图（融合后）</p>
 </div>
 
-融合基因属于结构突变，目前主要是通过全基因组或RNA-seq数据进行检测（如果你感兴趣可以搜索与融合基因检测的相关方法学文献），在各种肿瘤中，特别是血液肿瘤是普遍存在的一种分子异常。
+融合基因是一种广泛存在于各类肿瘤中的分子异常形式，属于结构变异，目前主要是通过全基因组或RNA-seq数据进行检测（如果你感兴趣可以搜索与融合基因检测的相关方法学文献）。
 
 ##### 基因突变热图
 
 什么是基因突变热图？
 
-基因突变热图是用来直观展示基因变异频率在整体样本中的分布情况，同时可以和一些临床指标进行关联展示，几乎所有大样本WES或WGS测序项目你都可以看到基因突变热图，它是我们了解某一疾病中基因突变概况（profile）的最直观的方式之一，一般一行代表一个基因，一列代表一个样本。
+基因突变热图可以用来直观展示基因变异频率在整体样本中的分布情况，同时可以和一些临床指标进行关联展示，几乎所有大样本WES或WGS测序项目的文章中你都可以看到基因突变热图，它是我们了解某一疾病中基因突变概况（profile）的最直观的方式之一，一般一行代表一个基因，一列代表一个样本。
 
 - 图四是2016年发表在Nature Genetics的[某篇](https://www.nature.com/ng/journal/v48/n12/full/ng.3691.html)文章中的[基因突变热图](https://pecan.stjude.org/proteinpaint/study/HM.BALL.DUX4-ERG..Mullighan%2520DUX4%2520ERG)。
 
@@ -169,8 +169,6 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig4.png">
 <p><b>图四</b> 基因突变热图</p>
 </div>
-
-基因突变热图广泛应用于基因变异测序项目的文章中，一般推荐在样本量比较多的情况下使用。
 
 **Tips：**
 
@@ -180,9 +178,7 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 
 ##### 突变频率图
 
-不同基因以及基因的不同突变类型的基因突变频率是我们研究某一疾病基因变异数据时经常关注的一个问题。换句话说，就是你分析完数据后要回答这么两个问题：哪些基因突变频率最高，哪些基因的哪些突变类型的突变频率最高。
-
-一般地，那些突变频率靠前的基因，大多是与疾病密切相关的一些基因组异常（SNVs、INDELs、Fusions、CNVs）。
+基因突变频率是我们研究某一疾病基因变异数据时经常关注的一个问题，如果基因突变发生频率较高，重现次数较多，那么这个基因突变极有可能是该疾病中普遍存在的一种分子标志以及驱动性事件（SNVs、INDELs、Fusions、CNVs）。
 
 - 图五是使用2016年发表在Nature Genetics上的[某篇](https://www.nature.com/ng/journal/v48/n12/full/ng.3691.html)文章数据画的的基因突变频率图
 - 图六是一篇2017年发表在Nature Genetics上的[某篇](http://www.nature.com/ng/journal/v49/n8/full/ng.3909.html?foxtrotcallback=true)文章的正图。
@@ -195,7 +191,7 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 <p><b>图六</b> 基因突变频率图-T-ALL</p>
 </div>
 
-基因突变频率图是在大样本基因组学中最常用的用于展示基因突变频率的一种形式，除了上面这种，另外一种则是柱状图，也是很不错的选择之一（目前PeCan Data Portal还不支持），如图六-2, 节选至[某篇](http://www.nature.com/ng/journal/v49/n8/full/ng.3900.html?foxtrotcallback=true)文章。
+除了上面这种，另外还可以用柱状图来展示基因突变频率（目前PeCan Data Portal还不支持），如图六-2, 节选至[某篇](http://www.nature.com/ng/journal/v49/n8/full/ng.3900.html?foxtrotcallback=true)文章。
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig6-2.png">
@@ -207,7 +203,7 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 
 基因功能组(Function group)就是将候选基因根据其主要功能分组，然后得到各个功能组在样本中的基因突变分布情况。
 
-常见的基因功能分组：转录因子（Transcription factors ，TFs）、信号分子（Signaling）、表观修饰因子（Epigenetic modifier）、肿瘤抑制因子（Tumor suppressor）、细胞周期相关（Cell cycle）等，当然你也可以完全按照你自己的意愿将基因进行分组。
+常见的基因功能分组：转录因子（Transcription factors ，TFs）、信号分子（Signaling）、表观修饰因子（Epigenetic modifier）、肿瘤抑制因子（Tumor suppressor）、细胞周期相关（Cell cycle）等。
 
 - 图七是2016年发表在Ebiomedcine上[某篇](http://www.ebiomedicine.com/article/S2352-3964(16)30181-5/fulltext)文章的附图的a部分。
 
@@ -215,8 +211,6 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig7.png">
 <p><b>图七</b> 基因功能组突变频率图</p>
 </div>
-
-这种图可以很好的展示疾病或样本分组与功能基因组基因突变的关系，另外通过上面的柱状图显示出在每一组中发生了基因突变的人数。
 
 ##### 丝带图
 
@@ -240,7 +234,7 @@ ProteinPaint为Pecan Data Portal提供了一个用于查看基因表达水平的
 <p><b>图九</b> Boxplot</p>
 </div>
 
-Boxplot有助于交互式的查看基因突变与其基因表达量的关系，比如癌基因一般是通过基因突变获得功能，使其过量表达而发生作用。 当你在自己的数据中发现某个癌基因（促进细胞增殖、生长等）发生了基因突变，但是它的基因表达量不高，相对来说，那基因突变所发挥的意义就有待进一步探讨了。
+Boxplot有助于交互式的查看基因突变与其基因表达量的关系，比如癌基因一般是通过基因突变获得功能，使其过量表达而发生作用。 当你在自己的数据中发现某个癌基因（促进细胞增殖、生长等）发生了基因突变，但是它的基因表达量不高，那么其对于该癌基因的激活作用可能就要做进一步探讨了。
 
 ##### 基因组范围的可视化
 

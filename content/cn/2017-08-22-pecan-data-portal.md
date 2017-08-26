@@ -253,21 +253,31 @@ Boxplot有助于交互式的查看基因突变与其基因表达量的关系，�
 
 了解一些诸如常用的生物信息学文件格式、基因变异、基因表达等基础知识，将有助于你更好的利用[Pecan Data Portal](https://pecan.stjude.org/home)以及其他类似的在线可视化和数据分析工具。
 
+下面是一些有用的链接：
+
+**基因测序原始数据仓库**
+
 - [TCGA](https://cancergenome.nih.gov/)
 - [EGA](https://www.ebi.ac.uk/ega/home)
 - [dbGaP](https://www.ncbi.nlm.nih.gov/gap)
 - [DDBJ](http://www.ddbj.nig.ac.jp/)
+
+**在线分析及可视化工具**
+
 - [UCSC](http://genome.ucsc.edu/)
 - [Ensembl](http://www.ensembl.org/index.html)
 - [cbioPortal](http://www.cbioportal.org/)
 - [iCoMut](http://firebrowse.org/iCoMut/?cohort=LAML)
 - [Galaxyproject](https://www.galaxyproject.org/)
-- [CDD](https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml)
-- [UniProt](http://www.uniprot.org/)
-- [Pfam](http://pfam.xfam.org/)
 - [DAVID](https://david.ncifcrf.gov/)
 - [Oncoprinter](http://www.cbioportal.org/oncoprinter.jsp)
 - [MutationMapper](http://www.cbioportal.org/mutation_mapper.jsp)
+
+**蛋白质结构域相关数据库**
+- [CDD](https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml)
+- [UniProt](http://www.uniprot.org/)
+- [Pfam](http://pfam.xfam.org/)
+
 
 ### 小结
 

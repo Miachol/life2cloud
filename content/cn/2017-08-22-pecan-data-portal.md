@@ -115,8 +115,7 @@ PeCan Data Portal提供的ProteinPaint工具目前只能用来画**一维的基�
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig1.png">
-
-<b>图一</b> 基因突变模式图
+<p><b>图一</b> 基因突变模式图</p>
 </div>
 
 ProteinPaint的基因突变模式图可以说是目前市面上最好看的一种，支持SNVs、INDELs、以及融合基因的蛋白编码区的可视化，配色极佳，如果你想自己开发相关工具，可以参考该工具使用的颜色主题。
@@ -150,7 +149,6 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig2.png">
 <p><b>图二</b> 融合基因模式图（融合前）</p>
-
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig3.png">
 <p><b>图三</b> 融合基因模式图（融合后）</p>
 </div>
@@ -185,8 +183,7 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig5.png">
-<p><b>图五</b> 基因突变频率图-DUX4_ERG</p>
-
+<p/><b>图五</b> 基因突变频率图-DUX4_ERG<p/>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig6.png">
 <p><b>图六</b> 基因突变频率图-T-ALL</p>
 </div>
@@ -250,8 +247,6 @@ Boxplot有助于交互式的查看基因突变与其基因表达量的关系，�
 #### 相关阅读材料
 
 在之前的文字中有许多与基因组学、转录组学相关的参考文献可供你阅读，或者你也可以在[Pubmed](https://www.ncbi.nlm.nih.gov/pubmed)搜索其他与基因组学、转录组学相关的文献。
-
-了解一些诸如常用的生物信息学文件格式、基因变异、基因表达等基础知识，将有助于你更好的利用[Pecan Data Portal](https://pecan.stjude.org/home)以及其他类似的在线可视化和数据分析工具。
 
 下面是一些有用的链接：
 

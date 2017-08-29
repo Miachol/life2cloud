@@ -235,7 +235,7 @@ Boxplot有助于交互式的查看基因突变与其基因表达量的关系，�
 
 ##### 基因组范围的可视化
 
-如图十所示，在2017年Pecan Data Portal提供了一个[基因组坐标可拖拽式](https://pecan.stjude.org/proteinpaint/study/retina2017)可视化工具，他们使用这个工具展示了人和小鼠视网膜相关的数据（WGBS, ChIPSEQ, chromHMM），并包含了hg19和mm9版本的视网膜RNA表达水平，详细信息可以[参考原文](http://linkinghub.elsevier.com/retrieve/pii/S0896627317303483)。
+如图十所示，Pecan Data Portal提供[基因组坐标可拖拽式](https://pecan.stjude.org/proteinpaint/study/retina2017)可视化工具，他们使用这个工具展示了人和小鼠视网膜相关的数据（WGBS, ChIPSEQ, chromHMM），并包含了hg19和mm9版本的视网膜RNA表达水平，详细信息可以[参考原文](http://linkinghub.elsevier.com/retrieve/pii/S0896627317303483)。
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-08-22-pecan-data-portal/fig10.png">

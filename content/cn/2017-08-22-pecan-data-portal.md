@@ -16,15 +16,13 @@ tags:
 
 ## 引言
 
-你正在阅读的是一个系列教程，本系列教程主要讲述了在生物信息学分析过程中常用到的一个数据库/可视化工具——[Pecan Data Portal](https://pecan.stjude.org/home)，如果顺利的话，这一教程将被整合，并成为[生物信息入门最佳实践](https://github.com/best-practices-in-bioinformatics/basic)的一部分。在开始阅读本章节之前，请先思考以下几个问题：
+你正在阅读的是一个系列教程，本系列教程主要讲述了在生物信息学分析过程中常用到的一个数据库/可视化工具——[Pecan Data Portal](https://pecan.stjude.org/home)。在阅读过程中，请带着以下几个问题进行阅读：
 
 - Pecan Data Portal 是一个怎样的工具？
 - 它能够被用来做哪些事情？
 - 我们应该如何使用它？有哪些小技巧？
 - 它有什么优点和缺点？
 - 如果你是开发者，你想增加或改进什么功能？
-
-如果你已经对 Pecan Data Portal 非常熟悉，或者觉得它对你没有什么吸引力，请跳过本章节。
 
 本系列教程将会被拆分为三个部分，分别对以上的五个问题进行相应的介绍或讨论
 
@@ -254,6 +252,7 @@ Boxplot有助于交互式的查看基因突变与其基因表达量的关系，�
 - [EGA](https://www.ebi.ac.uk/ega/home)
 - [dbGaP](https://www.ncbi.nlm.nih.gov/gap)
 - [DDBJ](http://www.ddbj.nig.ac.jp/)
+- [GEO](https://www.ncbi.nlm.nih.gov/geo/)
 
 **在线分析及可视化工具**
 
@@ -267,9 +266,15 @@ Boxplot有助于交互式的查看基因突变与其基因表达量的关系，�
 - [MutationMapper](http://www.cbioportal.org/mutation_mapper.jsp)
 
 **蛋白质结构域相关数据库**
+
 - [CDD](https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml)
 - [UniProt](http://www.uniprot.org/)
 - [Pfam](http://pfam.xfam.org/)
+- [SMART](http://smart.embl-heidelberg.de/help/smart_glossary.shtml)
+
+**蛋白质-蛋白质相互作用网络**
+
+- [STRING](https://string-db.org/)
 
 
 ### 小结

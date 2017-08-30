@@ -121,6 +121,10 @@ handler.on('push', function (event) {
 # deploy.sh
 cd ${your_blog_dir}
 # Some of Update Command
+git ch master
+git br -D develop
+git pull
+git ch develop
 git pull
 ```
 

@@ -91,5 +91,3 @@ runproteinpaint({
 - **任务一：** 查看[Retina2017](https://pecan.stjude.org/proteinpaint/study/retina2017)可视化结果，并添加Genecode、RepeatMasker以及自定义的track。
 - **任务二：** 在[Retina2017](https://pecan.stjude.org/proteinpaint/study/retina2017)可视化结果中查看TP53、SIX6的基因表达水平及其与表观遗传学相关的Motif。
 - **任务三：** 分别使用UCSC和ProteinPaint展示自定义的track.
-
-以上任何内容有错误或者需要完善的地方，请[点击此处](https://github.com/Miachol/life2cloud/edit/master/content/cn/2017-08-22-pecan-data-portal-2.md)进行编辑，并发起Pull requests，在我审核过后，我将酌情进行合并。

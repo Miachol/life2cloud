@@ -282,6 +282,4 @@ Boxplot有助于交互式的查看基因突变与其基因表达量的关系，�
 通过阅读以上内容我相信你对于[PeCan Data Portal](https://pecan.stjude.org/home)及其工具[ProteinPaint](https://pecan.stjude.org/proteinpaint)已经有了一定了解，如果在阅读完以上材料后，想继续学习如何使用这个工具，你可以选择:
 
 - 阅读[官方文档](https://docs.google.com/document/d/1JWKq3ScW62GISFGuJvAajXchcRenZ3HAvpaxILeGaw0/edit)，然后自学，我猜是最好的方式之一，你将会得到极大的锻炼
-- 阅读系列文章之（二），我将手把手教你怎么用[PeCan Data Portal](https://pecan.stjude.org/home)
-
-以上任何内容有错误或者需要完善的地方，请[点击此处](https://github.com/Miachol/life2cloud/edit/master/content/cn/2017-08-22-pecan-data-portal.md)进行编辑，并发起Pull requests，在我审核过后，我将酌情进行合并。
+- [阅读系列文章之（二）](https://life2cloud.com/cn/2017/08/pecan_data_portal_2/)

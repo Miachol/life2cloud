@@ -116,7 +116,7 @@ PeCan Data Portal提供的ProteinPaint工具目前只能用来画**一维的基�
 
 ProteinPaint的基因突变模式图可以说是目前市面上最好看的一种，支持SNVs、INDELs、以及融合基因的蛋白编码区的可视化，配色极佳，如果你想自己开发相关工具，可以参考该工具使用的颜色主题。
 
-**编码区基因突变类型：**
+**常见基因组异常类型：**
 
 - Missense (错意突变)
 - Frameshift（框移突变，包括插入和缺失）
@@ -125,7 +125,12 @@ ProteinPaint的基因突变模式图可以说是目前市面上最好看的一�
 - Splice region （剪接区突变）
 - ProteinIns（非框移插入）
 - ProteinDel（非框移缺失）
+- UTR_3
+- UTR_5
+- Intron
+- Intergenic
 - Fusion transcript（融合基因）
+- CNV （拷贝数变异）
 
 **Tips：**
 

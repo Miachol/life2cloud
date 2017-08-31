@@ -39,4 +39,3 @@ Email：lee_jianfeng@sjtu.edu.cn；主页：<http://www.life2cloud.com>；现正
 ### 网页服务
 
 - 实验室网站 [JhuangLab](http://bioinfo.rjh.com.cn/labs/jhuang/index.php)
-- 病毒准种分析工具 [qap](http://bioinfo.rjh.com.cn/labs/jhuang/tools/qap/)、[Wqap](http://bioinfo.rjh.com.cn/labs/jhuang/tools/qap/wqap)

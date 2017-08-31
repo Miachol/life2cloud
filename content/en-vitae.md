@@ -39,4 +39,3 @@ As lead author:
 ### Web service
 
 - Laboratory website [JhuangLab]http://bioinfo.rjh.com.cn/labs/jhuang/index.php)
-- Quasispecies Analysis Package [qap](http://bioinfo.rjh.com.cn/labs/jhuang/tools/qap/)、[Wqap](http://bioinfo.rjh.com.cn/labs/jhuang/tools/qap/wqap) based on [Galaxy](https://galaxyproject.org/)

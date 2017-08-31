@@ -1,10 +1,10 @@
 ---
-title: Conclution | 收拾行囊，继续前行
+title: Conclusion | 收拾行囊，继续前行
 author: Jianfeng Li
 date: '2017-08-22'
-slug: conclution-shsmu-2-years
+slug: conclusion-shsmu-2-years
 categories:
-  - conclution
+  - conclusion
 tags:
   - flag
 ---

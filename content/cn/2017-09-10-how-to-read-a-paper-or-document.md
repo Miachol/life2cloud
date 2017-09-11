@@ -188,10 +188,10 @@ tags:
 
 ```markdown
 ---
-title: JCB | International Cancer Genome Consortium (ICGC)
+title: JCB | TCGA Pan-Cancer analysis project
 author: Jianfeng Li
 date: '2017-09-05'
-slug: jcb-ICGC
+slug: jcb-tcga-pan-cancer-project
 categories:
   - Journal Club
 tags:

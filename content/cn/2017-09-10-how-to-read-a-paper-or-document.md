@@ -43,8 +43,11 @@ tags:
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig2.png">
-<p><b>图二</b> 好的排版示例</p>
+<p><b>图二</b> 好的排版示例 （<a href="http://blog.sina.com.cn/s/blog_7d71da1b0102vdvr.html">来源网络</a>）</p>
+
 </div>
+
+
 
 我现在的做法是什么？以后我会怎么做？我在一个月之前是会把阅读笔记和对一些问题的思考用印象笔记记录下来，以后呢？我会用Markdown作笔记，然后托管到Github上面，截止到现在也差不多有10多篇博客，10多篇文献阅读笔记了。我之所以用Markdown记笔记并且托管到Github上的原因有以下几个：
 
@@ -66,6 +69,46 @@ tags:
 
 你是基于什么目的看这个文献或者文档的？如果这个问题不弄清楚，那么你在阅读的时候就会像一只无头苍蝇一样，是无法产生深刻的认识和理解的，特别是面对一些逻辑不清晰的文章，你会很容易迷失，抓不住重点。激进一点地说，一篇文章对你有价值的，正是那些你进行过仔细思考的内容，经过时间的流逝，最后，你能够记住或者回忆得起来的也就是这些重点内容了（比如主要创新点、可以借鉴的思路、方法）。
 
+### Feedly以及Pubmed
+
+选择合适的阅读材料，一个重要的方向就是跟踪自己研究领域内最新的论文和相关期刊，之前有些同学可能喜欢用邮件去订阅，但是久而久之，邮箱是不是快被装满了，你也没什么动力一个一个去点击阅读了？
+
+我强烈推荐一个RSS订阅器，Feedly，并配合Pubmed以及其他数据库、或期刊的RSS订阅功能来进行你的文献追踪和收集，如果你不知道什么是Feedly，可以[点击这里](https://feedly.com/i/welcome)进行阅读和试用。
+
+<div align=center>
+<img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig7.png">
+<p><b>图三</b> Feedly 订阅的Bioinformatics杂志</p>
+</div>
+
+互联网上有非常多支持RSS订阅的期刊、网站（如博客、新闻）等，你可以建立你自己的RSS订阅资源，并对其进行分类管理。
+
+<div align=center>
+<img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig8.png">
+<p><b>图四</b> 管理Feedly订阅源</p>
+</div>
+
+如果是医学相关学生，你可以试用[Pubmed](https://www.ncbi.nlm.nih.gov/pubmed)数据库搜索某个关键词，然后对这个关键词生成RSS源，从而可以实时跟踪某些含有该关键词的最新论文。
+
+<div align=center>
+<img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig9.png">
+<p><b>图五</b> 使用Pubmed订阅关键词</p>
+</div>
+
+如果你想订阅某个期刊的所有在Pubmed中收录的文章？同样也可以，只需要输入`Nather[Journal]`这样的关键字，然后生成RSS就可以了，如果你想下载我订阅的RSS，可以[点击这里](https://raw.githubusercontent.com/Miachol/Writing-material/master/blog/data/2017-09-10-how-to-read-a-paper-or-document/ljf_feedly_opml.opml),
+
+主要包括以下期刊和博客：
+
+- Nature、Science、Cell、Lancet、New England Journal of Medicine、PNAS、Nature Gentics、Cancer Cell、Nature Reviews Cancer、Nature Reviews Genetics、Nature Medicine、Nature Methods、Nature Protocols、Nature Communication、Genome Research、Nucleic Acids Research、Bioinformatics、Genome Biology、Blood、Leukemia、Plos Genetics、PLOS Computational Biology、BMC Bioinformatics、Algorithms for Molecular Biology、Molecular Systems Biology、Plos Biology、
+- RNA-seq Blog、安正超的博客、谢易辉的博客、李剑峰的博客
+
+<div align=center>
+<img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig10.png">
+<p><b>图六</b> 使用Pubmed订阅Nature杂志</p>
+</div>
+
+你可以动手，试试将[Nature Biotechnology ](https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1-IhdOtu689NDp3382QCEYH_QOXrMDUYi9sbls-bZSMOXtBQQg) 加入你的RSS订阅源。
+
+
 ## 合理的阅读顺序
 
 阅读文献和阅读文档有着显著地差别，前者倾向于对某一个或一系列科学问题进行的探索和回答，读者需要按照作者的思路进行阅读和理解；而文档则更加侧重于工具、软件的使用，读者更多的是要动手模仿以及尝试。
@@ -84,7 +127,7 @@ tags:
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig3.png">
-<p><b>图三</b> 科学研究轮文（EBioMedicine）</p>
+<p><b>图七</b> 科学研究轮文（EBioMedicine）</p>
 </div>
 
 泛读一篇科学研究论文一般可以按照下面的顺序进行阅读：
@@ -102,7 +145,7 @@ tags:
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig4.png">
-<p><b>图四</b> 综述类论文（Nat Rev Genet）</p>
+<p><b>图八</b> 综述类论文（Nat Rev Genet）</p>
 </div>
 
 综述类论文不论是泛读还是精读，最最重要的就是先看各个标题，并快速总结出综述中提到的各个主题的主要结论、然后重点关注讨论部分。精读综述论文则还需要根据参考文献，进行进一步的扩展阅读。
@@ -113,10 +156,12 @@ tags:
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig5.png">
-<p><b>图五</b> 技术文档（ANNOVAR）</p>
+<p><b>图九</b> 技术文档（ANNOVAR）</p>
 </div>
 
-阅读文档是生物信息以及与编程相关人员必须具备的技能，几乎所有用于数据分析、编程框架都会有各自的文档，我们应该以什么样的顺序来阅读呢？
+阅读文档是生物信息以及与编程相关人员必须具备的技能，几乎所有用于数据分析的工具以及编程框架都会有各自的文档。
+
+我们应该以什么样的顺序来阅读呢？
 
 - 版本信息，技术文档是有明确版本号的，它伴随着软件工具的整个生命周期，并且一一对应，如果你看的文档版本和你使用的软件版本不一致，那么你将会遭遇很多莫名其妙的错误
 - 相关教程，原作者和其他人一般会对某一工具的使用有基本的介绍和教程，在阅读文档之前，强烈建议先通读和练习这些教程对某一工具或编程框架有一个系统的了解。另外，如果在阅读文档或者教程过程中你有很多看不懂的地方（比如某个API的用法、某个专有名词概念），那就说明你需要尽量的去了解你正在学习和使用的这个工具主要有什么功能、主要模块有哪些，模块与模块之间是怎么交互的？为什么要设计这个API、为什么要创造这个概念？，然后通过看懂其他的概念、用法来让你对不懂的概念和用法有一个定位，并且从不同角度去切入理解这一概念或者用法
@@ -325,7 +370,7 @@ tags:
 
 <div align=center>
 <img src="https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-10-how-to-read-a-paper-or-document/fig6.png">
-<p><b>图六</b> 克服遗忘曲线（来源网络）</p>
+<p><b>图十</b> 克服遗忘曲线（<a href="http://www.boykiemackay.com/learning-memory/the-science-of-learning/">来源网络</a>）</p>
 </div>
 
 我建议每周可以把之前一周记录下来的阅读笔记以及进行过思考的内容做一个系统、完整的记录，然后并在每一周结束时进行一个梳理和回顾，当积累到一定数量之后，再将笔记和思考记录进行归类并重新认识。

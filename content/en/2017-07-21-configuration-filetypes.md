@@ -1,10 +1,10 @@
 ---
-title: configr | Configuration file types
+title: Configuration file types
 author: Jianfeng Li
 date: '2017-07-21'
 slug: configuration-filetypes
 categories:
-  - Computer skill
+  - tutorial
 tags:
   - YAML
   - JSON
@@ -113,7 +113,7 @@ bash_parse:
 mulitple_parse:
   raw: "@>@str_replace('config','g$','gr')@<@, #>#echo configr#<#, {{key:yes_flag}}, {{yes}}, @>@str_replace('configr','r','')@<@, #>#echo config#<#, {{key:no_flag}}, {{no}}"
   parsed: configr, configr, yes, 1, config, config, no, 0
-glue_parse: 
+glue_parse:
   raw_1: "!!glue {1:10}"
   parsed_1: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
   raw_2: "!!glue_numeric {1:10}"

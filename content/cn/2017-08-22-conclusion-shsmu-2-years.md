@@ -1,5 +1,5 @@
 ---
-title: Conclusion | 收拾行囊，继续前行
+title: 收拾行囊，继续前行
 author: Jianfeng Li
 date: '2017-08-22'
 slug: conclusion-shsmu-2-years

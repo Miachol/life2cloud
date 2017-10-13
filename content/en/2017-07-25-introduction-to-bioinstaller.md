@@ -1,11 +1,11 @@
 ---
-title: "BioInstaller | Introduction to BioInstaller"
+title: Introduction to BioInstaller
 author: "Jianfeng Li"
 date: "2017-07-25"
 output: rmarkdown::html_vignette
 slug: introduction-to-bioinstaller
 categories:
-  - Computer skill
+  - tutorial
 tags:
   - R
   - r-package

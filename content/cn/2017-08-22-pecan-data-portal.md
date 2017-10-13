@@ -1,5 +1,5 @@
 ---
-title: Visualization | Pecan Data Portal 系列教程（一）
+title: Pecan Data Portal 系列教程（一）
 author: Jianfeng Li
 date: '2017-08-22'
 slug: pecan_data_portal_1

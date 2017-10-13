@@ -1,5 +1,5 @@
 ---
-title: Tutorial | 如何阅读文献和文档
+title: 如何阅读文献和文档
 author: Jianfeng Li
 date: '2017-09-10'
 slug: how-to-read-a-paper-or-document

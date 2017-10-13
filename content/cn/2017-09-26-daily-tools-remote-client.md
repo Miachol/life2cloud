@@ -1,5 +1,5 @@
 ---
-title: Tutorial | 日常用到的软件和工具 (远程客户端)
+title: 日常用到的软件和工具 (远程客户端)
 author: Jianfeng Li
 date: '2017-09-26'
 slug: daily-tools-remote-client

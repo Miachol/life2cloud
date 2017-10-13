@@ -1,5 +1,5 @@
 ---
-title: Tutorial | 日常用到的软件和工具 (文本编辑器)
+title: 日常用到的软件和工具 (文本编辑器)
 author: Jianfeng Li
 date: '2017-09-26'
 slug: daily-tools-text-editor

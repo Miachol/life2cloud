@@ -35,6 +35,11 @@ Email：lee_jianfeng@sjtu.edu.cn；主页：<http://www.life2cloud.com>；现正
 
 - [configr](https://github.com/Miachol/configr)：整合多个配置文件解析器（jsonlite, ini, yaml, RcppTOML），并对其进行一些语法扩展
 - [BioInstaller](https://github.com/JhuangLab/BioInstaller)：一种生物软件包及常用数据库/文件的下载器（部分内置安装脚本）
+- [ngstk](https://github.com/JhuangLab/iseq):用于二代测序数据的质量控制、可视化、数据格式转换的工具包
+
+### Python包
+
+- [iseq](https://github.com/JhuangLab/iseq):一种基于二代测序数据的基因变异分析工具
 
 ### 网页服务
 

@@ -1,5 +1,5 @@
 ---
-title: Node.js | 使用Webhook自动更新博客
+title: 使用Webhook自动更新博客
 author: Jianfeng Li
 date: '2017-07-25'
 slug: nodejs-auto-deploy-blog

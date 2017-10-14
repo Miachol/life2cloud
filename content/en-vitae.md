@@ -35,7 +35,7 @@ As lead author:
 
 - [configr](https://github.com/Miachol/configr): Implements the JSON, INI, YAML and TOML parser for R setting and writing of configuration file.
 - [BioInstaller](https://github.com/JhuangLab/BioInstaller): Can be used to install and download massive bioinformatics analysis softwares and databases, such as NGS reads mapping tools with its required databases.
-- [ngstk](https://github.com/JhuangLab/iseq): Can be used to facilitate the analysis of NGS data, such as visualization, conversion of data format for WEB service input and other purpose
+- [ngstk](https://github.com/JhuangLab/ngstk): Can be used to facilitate the analysis of NGS data, such as visualization, conversion of data format for WEB service input and other purpose
 
 ### Python package
 

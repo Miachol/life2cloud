@@ -47,6 +47,20 @@ As lead author:
 
 ## Publication
 
-### Journal
+### In English
+
+#### 基础论著
 
 - Liu YF, Wang BY, Zhang WN, Huang JY, Li BS, Zhang M, Jiang L, **Li JF**, Wang MJ, Dai YJ, Zhang ZG, Wang Q, Kong J, Chen B, Zhu YM, Weng XQ, Shen ZX, Li JM, Wang J, Yan XJ, Li Y, Liang YM, Liu L, Chen XQ, Zhang WG, Yan JS, Hu JD, Shen SH, Chen J, Gu LJ, Pei D, Li Y, Wu G, Zhou X, Ren RB, Cheng C, Yang JJ, Wang KK, Wang SY, Zhang J, Mi JQ, Pui CH, Tang JY, Chen Z, Chen SJ. Genomic Profiling of Adult and Pediatric B-cell Acute Lymphoblastic Leukemia. EBioMedicine. 2016 Jun;8:173-83. doi: 10.1016/j.ebiom.2016.04.038. Epub 2016 May 13. PubMed PMID: 27428428; PubMed Central PMCID: PMC4919728.
+
+### In Chinese
+
+#### Journal
+
+- **LI Jian-feng**, et al. Analysis method based on the gene-panel sequencing data Journal of Shanghai Jiaotong University(Medical Science), 2017（Accepted）
+
+#### Colloquium papers
+
+- ZHANG Wei-na，**LI Jian-feng**，et al, Analysis of epigenetic regulatory gene mutations in adult and childhood acute B lymphoblastic leukemia，The 16th National Conference on Experimental Hematology, 2017, Conference Report
+- **LI Jian-feng**，HUANG Jin-yan, A method of gene mutation detection based on whole transcriptome resequencing of acute lymphoblastic leukemia, The 16th National Conference on Experimental Hematology, 2017, Poster Session
+- **LI Jian-feng**，HUANG Jin-yan, annovarR:an R package to annotate genetic variants from genomic and transcriptome data, The 16th National Conference on Experimental Hematology, 2017, Poster Session

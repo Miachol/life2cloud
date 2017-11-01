@@ -47,6 +47,20 @@ Email：lee_jianfeng@sjtu.edu.cn；主页：<http://www.life2cloud.com>；现正
 
 ## 出版物
 
-### 期刊
+### 英文
+
+#### 期刊
 
 - Liu YF, Wang BY, Zhang WN, Huang JY, Li BS, Zhang M, Jiang L, **Li JF**, Wang MJ, Dai YJ, Zhang ZG, Wang Q, Kong J, Chen B, Zhu YM, Weng XQ, Shen ZX, Li JM, Wang J, Yan XJ, Li Y, Liang YM, Liu L, Chen XQ, Zhang WG, Yan JS, Hu JD, Shen SH, Chen J, Gu LJ, Pei D, Li Y, Wu G, Zhou X, Ren RB, Cheng C, Yang JJ, Wang KK, Wang SY, Zhang J, Mi JQ, Pui CH, Tang JY, Chen Z, Chen SJ. Genomic Profiling of Adult and Pediatric B-cell Acute Lymphoblastic Leukemia. EBioMedicine. 2016 Jun;8:173-83. doi: 10.1016/j.ebiom.2016.04.038. Epub 2016 May 13. PubMed PMID: 27428428; PubMed Central PMCID: PMC4919728.
+
+### 中文
+
+#### 期刊
+
+- **李剑峰** 等，基于基因Panel测序数据的分析方法，上海交通大学学报（医学版），2017 （已接收）
+
+#### 会议论文
+
+- 张伟娜，**李剑峰** 等，成人和儿童急性B淋巴细胞白血病的表观调节基因突变分析，第十六届全国实验血液学学术会议，2017，大会报告
+- **李剑峰**，黄金艳，基于急性淋巴细胞细胞白血病RNA-seq的肿瘤基因突变检测方法，第十六届全国实验血液学学术会议，2017，壁报展示
+- **李剑峰**，黄金艳，基因变异数据注释R包annovarR，第十六届全国实验血液学学术会议，2017，壁报展示

@@ -49,7 +49,7 @@ As lead author:
 
 ### In English
 
-#### 基础论著
+#### Journal
 
 - Liu YF, Wang BY, Zhang WN, Huang JY, Li BS, Zhang M, Jiang L, **Li JF**, Wang MJ, Dai YJ, Zhang ZG, Wang Q, Kong J, Chen B, Zhu YM, Weng XQ, Shen ZX, Li JM, Wang J, Yan XJ, Li Y, Liang YM, Liu L, Chen XQ, Zhang WG, Yan JS, Hu JD, Shen SH, Chen J, Gu LJ, Pei D, Li Y, Wu G, Zhou X, Ren RB, Cheng C, Yang JJ, Wang KK, Wang SY, Zhang J, Mi JQ, Pui CH, Tang JY, Chen Z, Chen SJ. Genomic Profiling of Adult and Pediatric B-cell Acute Lymphoblastic Leukemia. EBioMedicine. 2016 Jun;8:173-83. doi: 10.1016/j.ebiom.2016.04.038. Epub 2016 May 13. PubMed PMID: 27428428; PubMed Central PMCID: PMC4919728.
 

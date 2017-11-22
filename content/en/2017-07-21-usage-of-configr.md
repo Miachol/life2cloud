@@ -1,18 +1,13 @@
 ---
-title: Usage of configr
-author: Jianfeng Li
-date: '2017-07-21'
-slug: usage-of-configr
-categories:
-  - tutorial
-tags:
-  - R
-  - r-package
-  - configparser
-  - YAML
-  - JSON
-  - TOML
-  - INI
+title: "Usage of configr"
+author: "Jianfeng Li"
+date: "2017-11-22"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Usage of configr}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+from_Rmd: yes
 ---
 
 
@@ -63,14 +58,14 @@ Section names of configuration file can be get using `eval.config.sections`. Pyt
 
 ```r
 eval.config.sections(config.ini)
-#> [1] "default"            "comments"
+#> [1] "default"            "comments"          
 #> [3] "extra_list_parse"   "other_config_parse"
-#> [5] "rcmd_parse"         "bash_parse"
+#> [5] "rcmd_parse"         "bash_parse"        
 #> [7] "mulitple_parse"     "glue_parse"
 eval.config.sections(config.toml)
-#> [1] "bash_parse"         "comments"
-#> [3] "default"            "extra_list_parse"
-#> [5] "glue_parse"         "mulitple_parse"
+#> [1] "bash_parse"         "comments"          
+#> [3] "default"            "extra_list_parse"  
+#> [5] "glue_parse"         "mulitple_parse"    
 #> [7] "other_config_parse" "title"
 ```
 
@@ -119,25 +114,25 @@ read.config(file = config.toml)
 eval.config(file = config.yaml)
 #> $debug
 #> [1] "{{debug}} {{debug2}}"
-#>
+#> 
 #> attr(,"config")
 #> [1] "default"
 #> attr(,"configtype")
 #> [1] "yaml"
 #> attr(,"file")
-#> [1] "D:/Program_Files/R/R-3.4.1/library/configr/extdata/config.yaml"
+#> [1] "/home/ljf/Rlibrary/configr/extdata/config.yaml"
 
 # Read designated section
 eval.config(file = config.json, config = "comments")
 #> $version
 #> [1] "0.2.3"
-#>
+#> 
 #> attr(,"config")
 #> [1] "comments"
 #> attr(,"configtype")
 #> [1] "json"
 #> attr(,"file")
-#> [1] "D:/Program_Files/R/R-3.4.1/library/configr/extdata/config.json"
+#> [1] "/home/ljf/Rlibrary/configr/extdata/config.json"
 
 # Read designated section with its one value
 eval.config(file = config.ini, config = "comments", value = "version")
@@ -148,34 +143,189 @@ eval.config(file = config.ini, config = "comments", value = "version")
 
 
 ```r
-eval.config.merge(file = config.json, sections = c("default",
-    "comments"))
+eval.config.merge(file = config.json, sections = c("default", 
+  "comments"))
 #> $debug
 #> [1] "{{debug}} {{debug2}}"
-#>
+#> 
 #> $version
 #> [1] "0.2.3"
-#>
+#> 
 #> attr(,"config")
 #> [1] "default"  "comments"
 #> attr(,"configtype")
 #> [1] "json"
 #> attr(,"file")
-#> [1] "D:/Program_Files/R/R-3.4.1/library/configr/extdata/config.json"
-eval.config.merge(file = config.toml, sections = c("default",
-    "comments"))
+#> [1] "/home/ljf/Rlibrary/configr/extdata/config.json"
+eval.config.merge(file = config.toml, sections = c("default", 
+  "comments"))
 #> $debug
 #> [1] "{{debug}} {{debug2}}"
-#>
+#> 
 #> $version
 #> [1] "0.2.3"
-#>
+#> 
 #> attr(,"config")
 #> [1] "default"  "comments"
 #> attr(,"configtype")
 #> [1] "toml"
 #> attr(,"file")
-#> [1] "D:/Program_Files/R/R-3.4.1/library/configr/extdata/config.toml"
+#> [1] "/home/ljf/Rlibrary/configr/extdata/config.toml"
+```
+
+`fetch.config` can parse configuration files from internet and local that merged the files and return a list.
+
+
+```r
+links <- c("https://raw.githubusercontent.com/JhuangLab/BioInstaller/master/inst/extdata/config/db/db_annovar.toml", 
+  "https://raw.githubusercontent.com/JhuangLab/BioInstaller/master/inst/extdata/config/db/db_main.toml", 
+  system.file("extdata", "config.toml", package = "configr"))
+x <- fetch.config(links)
+x[c(1:5, length(x))]
+#> $db_annovar_1000g
+#> $db_annovar_1000g$buildver_available
+#> $db_annovar_1000g$buildver_available$`1000g`
+#> [1] "hg18"
+#> 
+#> $db_annovar_1000g$buildver_available$`1000g2010`
+#> [1] "hg18"
+#> 
+#> $db_annovar_1000g$buildver_available$`1000g2012apr`
+#> [1] "hg19" "hg18"
+#> 
+#> $db_annovar_1000g$buildver_available$`1000g2012jul`
+#> [1] "hg18"
+#> 
+#> $db_annovar_1000g$buildver_available$`1000g2014oct`
+#> [1] "hg38" "hg19" "hg18"
+#> 
+#> $db_annovar_1000g$buildver_available$`1000g2015aug`
+#> [1] "hg38" "hg19"
+#> 
+#> $db_annovar_1000g$buildver_available$other
+#> [1] "hg19"
+#> 
+#> 
+#> $db_annovar_1000g$description
+#> [1] "alternative allele frequency data in 1000 Genomes Project"
+#> 
+#> $db_annovar_1000g$source_url
+#> [1] "http://www.openbioinformatics.org/annovar/download/{{buildver}}_{{version}}.zip"
+#> 
+#> $db_annovar_1000g$version_available
+#>  [1] "1000g2015aug" "1000g2014oct" "1000g2014sep"
+#>  [4] "1000g2014aug" "1000g2012apr" "1000g2012feb"
+#>  [7] "1000g2011may" "1000g2010nov" "1000g2012apr"
+#> [10] "1000g2010jul" "1000g2010"    "1000g"       
+#> 
+#> $db_annovar_1000g$version_newest
+#> [1] "1000g2015aug"
+#> 
+#> 
+#> $db_annovar_1000g_sqlite
+#> $db_annovar_1000g_sqlite$buildver_available
+#> [1] "hg19"
+#> 
+#> $db_annovar_1000g_sqlite$install
+#> [1] "#R#for(i in c('all', 'afr', 'eas', 'eur', 'sas', 'amr')) {\\n  x <- set.1000g.db(sprintf('{{version}}_%s', i), '{{buildver}}', \\\"sql\\\");\\n  params <- list(sql.file = x, sqlite.path = str_replace(x, '.sql$', ''));\\n  do.call(sql2sqlite, params)\\n}\\n#R#"
+#> 
+#> $db_annovar_1000g_sqlite$source_url
+#> [1] "http://bioinfo.rjh.com.cn/download/annovarR/humandb/{{buildver}}_{{version}}.tar.gz"
+#> 
+#> $db_annovar_1000g_sqlite$version_available
+#> [1] "1000g2015aug"
+#> 
+#> $db_annovar_1000g_sqlite$version_newest
+#> [1] "1000g2015aug"
+#> 
+#> 
+#> $db_annovar_avsift
+#> $db_annovar_avsift$buildver_available
+#> [1] "hg19" "hg18"
+#> 
+#> $db_annovar_avsift$decompress
+#> [1] TRUE TRUE
+#> 
+#> $db_annovar_avsift$description
+#> [1] "whole-exome SIFT scores for non-synonymous variants (obselete and should not be uesd any more)"
+#> 
+#> $db_annovar_avsift$source_url
+#> [1] "http://www.openbioinformatics.org/annovar/download/{{buildver}}_{{version}}.txt.gz"    
+#> [2] "http://www.openbioinformatics.org/annovar/download/{{buildver}}_{{version}}.txt.idx.gz"
+#> 
+#> $db_annovar_avsift$version_available
+#> [1] "avsift"
+#> 
+#> $db_annovar_avsift$version_newest
+#> [1] "avsift"
+#> 
+#> 
+#> $db_annovar_avsnp
+#> $db_annovar_avsnp$buildver_available
+#> $db_annovar_avsnp$buildver_available$avsnp138
+#> [1] "hg19"
+#> 
+#> $db_annovar_avsnp$buildver_available$avsnp142
+#> [1] "hg38" "hg19"
+#> 
+#> $db_annovar_avsnp$buildver_available$avsnp144
+#> [1] "hg38" "hg19"
+#> 
+#> $db_annovar_avsnp$buildver_available$avsnp147
+#> [1] "hg38" "hg19"
+#> 
+#> $db_annovar_avsnp$buildver_available$avsnp150
+#> [1] "hg38" "hg19"
+#> 
+#> 
+#> $db_annovar_avsnp$decompress
+#> [1] TRUE TRUE
+#> 
+#> $db_annovar_avsnp$description
+#> $db_annovar_avsnp$description$avsnp138
+#> [1] "dbSNP138 with allelic splitting and left-normalization"
+#> 
+#> $db_annovar_avsnp$description$avsnp142
+#> [1] "dbSNP142 with allelic splitting and left-normalization"
+#> 
+#> $db_annovar_avsnp$description$avsnp144
+#> [1] "dbSNP144 with allelic splitting and left-normalization (http://annovar.openbioinformatics.org/en/latest/articles/dbSNP/#additional-discussions)"
+#> 
+#> $db_annovar_avsnp$description$avsnp147
+#> [1] "dbSNP147 with allelic splitting and left-normalization"
+#> 
+#> 
+#> $db_annovar_avsnp$source_url
+#> [1] "http://www.openbioinformatics.org/annovar/download/{{buildver}}_{{version}}.txt.gz"    
+#> [2] "http://www.openbioinformatics.org/annovar/download/{{buildver}}_{{version}}.txt.idx.gz"
+#> 
+#> $db_annovar_avsnp$version_available
+#> [1] "avsnp150" "avsnp147" "avsnp144" "avsnp142" "avsnp138"
+#> 
+#> $db_annovar_avsnp$version_newest
+#> [1] "avsnp150"
+#> 
+#> 
+#> $db_annovar_avsnp_sqlite
+#> $db_annovar_avsnp_sqlite$buildver_available
+#> [1] "hg19"
+#> 
+#> $db_annovar_avsnp_sqlite$install
+#> [1] "#R#sql2sqlite('{{buildver}}_{{version}}.sqlite.sql', sqlite.path = '{{buildver}}_{{version}}.sqlite')#R#"
+#> 
+#> $db_annovar_avsnp_sqlite$source_url
+#> [1] "http://bioinfo.rjh.com.cn/download/annovarR/humandb/{{buildver}}_{{version}}.sqlite.sql.gz"
+#> 
+#> $db_annovar_avsnp_sqlite$version_available
+#> [1] "avsnp147"        "avsnp147.common" "avsnp144"       
+#> [4] "avsnp142"        "avsnp138"       
+#> 
+#> $db_annovar_avsnp_sqlite$version_newest
+#> [1] "avsnp147"
+#> 
+#> 
+#> $title
+#> [1] "TOML Example"
 ```
 
 ## Converting and writing configuration file
@@ -201,8 +351,8 @@ get.config.type(out.fn)
 
 # Generate a YAML format configuration file with defined
 # indent
-write.config(config.dat = list.test, file.path = out.fn, write.type = "yaml",
-    indent = 4)
+write.config(config.dat = list.test, file.path = out.fn, write.type = "yaml", 
+  indent = 4)
 #> [1] TRUE
 get.config.type(out.fn)
 #> [1] "yaml"
@@ -221,9 +371,9 @@ configr own several userful extra parse function, you can use the `parse.extra` 
 - `other.config` can be used to parse the value of `{{key:yes_flag}}` to `yes` if you setted `other.config = system.file('extdata', 'config.other.yaml', package='configr')` which content can be founded below.
 - `rcmd.parse` can be used to parse the value of `@>@str_replace('config','g$','gr')@<@` to `configr` if you setted `rcmd.parse = TRUE`.
 - `bash.parse` can be used to parse the value of `#>#echo bash#<#` to `bash` if you setted `bash.parse = TRUE`.
-- `glue.parse` can be used to paste the value of `!!glue {1:5}` to `["1", "2", "3", "4", "5"]`; `!!glue_numeric {1:5}` to [1, 2, 3, 4, 5]
+- `glue.parse` can be used to paste the value of `!!glue {1:5}` to `["1", "2", "3", "4", "5"]`; `!!glue_numeric {1:5}` to [1, 2, 3, 4, 5] 
 
-**Note:** `glue.parse` using the `glue` package `glue` function to do that. Just like glue('{1:5}') and be processed by unname(unlist(x)).
+**Note:** `glue.parse` using the `glue` package `glue` function to do that. Just like glue('{1:5}') and be processed by unname(unlist(x)). 
 The `!!glue` can be changed if you setted `glue.flag`. It is a remarkable fact that only contain the `glue.flag` character be parsed and the order of item will be changed if the `glue` result were multiple values. e.g. `['{a}', '!!glue {1:5}', '{{a}}']` will be parsed to `['{a}', '1', '2', '3', '4', '5', '{{a}}']`
 
 
@@ -234,17 +384,17 @@ read.config(file = other.config)
 #> $key
 #> $key$test_parse
 #> [1] 123
-#>
+#> 
 #> $key$test_parse2
 #> [1] 234
-#>
+#> 
 #> $key$yes_flag
 #> [1] "yes"
-#>
+#> 
 #> $key$no_flag
 #> [1] "no"
-#>
-#>
+#> 
+#> 
 #> $`samtools@1.3.1`
 #> $`samtools@1.3.1`$source_dir
 #> [1] "/tmp"
@@ -253,8 +403,8 @@ config.1 <- read.config(file = config.json)
 config.1$default
 #> $debug
 #> [1] "{{debug}} {{debug2}}"
-read.config(file = config.json, extra.list = list(debug = "self",
-    debug2 = "self2"))$default
+read.config(file = config.json, extra.list = list(debug = "self", 
+  debug2 = "self2"))$default
 #> $debug
 #> [1] "self self2"
 
@@ -263,25 +413,25 @@ config.1[sections]
 #> $default
 #> $default$debug
 #> [1] "{{debug}} {{debug2}}"
-#>
-#>
+#> 
+#> 
 #> $other_config_parse
 #> $other_config_parse$raw
 #> [1] "{{key:yes_flag}} {{key:no_flag}}"
-#>
+#> 
 #> $other_config_parse$parsed
 #> [1] "yes no"
-read.config(file = config.json, extra.list = list(debug = "self",
-    debug2 = "self2"), other.config = other.config)[sections]
+read.config(file = config.json, extra.list = list(debug = "self", 
+  debug2 = "self2"), other.config = other.config)[sections]
 #> $default
 #> $default$debug
 #> [1] "self self2"
-#>
-#>
+#> 
+#> 
 #> $other_config_parse
 #> $other_config_parse$raw
 #> [1] "yes no"
-#>
+#> 
 #> $other_config_parse$parsed
 #> [1] "yes no"
 
@@ -291,109 +441,109 @@ config.1[sections]
 #> $default
 #> $default$debug
 #> [1] "{{debug}} {{debug2}}"
-#>
-#>
+#> 
+#> 
 #> $other_config_parse
 #> $other_config_parse$raw
 #> [1] "{{key:yes_flag}} {{key:no_flag}}"
-#>
+#> 
 #> $other_config_parse$parsed
 #> [1] "yes no"
-#>
-#>
+#> 
+#> 
 #> $rcmd_parse
 #> $rcmd_parse$raw
 #> [1] "@>@ Sys.Date() @<@"
-read.config(file = config.json, extra.list = list(debug = "self",
-    debug2 = "self2"), other.config = other.config, rcmd.parse = T)[sections]
+read.config(file = config.json, extra.list = list(debug = "self", 
+  debug2 = "self2"), other.config = other.config, rcmd.parse = T)[sections]
 #> $default
 #> $default$debug
 #> [1] "self self2"
-#>
-#>
+#> 
+#> 
 #> $other_config_parse
 #> $other_config_parse$raw
 #> [1] "yes no"
-#>
+#> 
 #> $other_config_parse$parsed
 #> [1] "yes no"
-#>
-#>
+#> 
+#> 
 #> $rcmd_parse
 #> $rcmd_parse$raw
-#> [1] "2017-07-21"
-parse.extra(config.1, extra.list = list(debug = "self", debug2 = "self2"),
-    other.config = other.config, rcmd.parse = T)[sections]
+#> [1] "2017-11-22"
+parse.extra(config.1, extra.list = list(debug = "self", debug2 = "self2"), 
+  other.config = other.config, rcmd.parse = T)[sections]
 #> $default
 #> $default$debug
 #> [1] "self self2"
-#>
-#>
+#> 
+#> 
 #> $other_config_parse
 #> $other_config_parse$raw
 #> [1] "yes no"
-#>
+#> 
 #> $other_config_parse$parsed
 #> [1] "yes no"
-#>
-#>
+#> 
+#> 
 #> $rcmd_parse
 #> $rcmd_parse$raw
-#> [1] "2017-07-21"
+#> [1] "2017-11-22"
 
 
-sections <- c("default", "other_config_parse", "rcmd_parse",
-    "mulitple_parse")
+sections <- c("default", "other_config_parse", "rcmd_parse", 
+  "mulitple_parse")
 config.1[sections]
 #> $default
 #> $default$debug
 #> [1] "{{debug}} {{debug2}}"
-#>
-#>
+#> 
+#> 
 #> $other_config_parse
 #> $other_config_parse$raw
 #> [1] "{{key:yes_flag}} {{key:no_flag}}"
-#>
+#> 
 #> $other_config_parse$parsed
 #> [1] "yes no"
-#>
-#>
+#> 
+#> 
 #> $rcmd_parse
 #> $rcmd_parse$raw
 #> [1] "@>@ Sys.Date() @<@"
-#>
-#>
+#> 
+#> 
 #> $mulitple_parse
 #> $mulitple_parse$raw
 #> [1] "@>@str_replace('config','g$','gr')@<@, #>#echo configr#<#, {{key:yes_flag}}, {{yes}}, @>@str_replace('configr','r','')@<@, #># echo config#<#, {{key:no_flag}}, {{no}}"
-#>
+#> 
 #> $mulitple_parse$parsed
 #> [1] "configr, configr, yes, 1, config, config, no, 0"
-parse.extra(config.1, extra.list = list(debug = "self", debug2 = "self2",
-    yes = "1", no = "0"), other.config = other.config, rcmd.parse = T,
-    bash.parse = T)[sections]
+parse.extra(config.1, extra.list = list(debug = "self", debug2 = "self2", 
+  yes = "1", no = "0"), other.config = other.config, rcmd.parse = T, 
+  bash.parse = T)[sections]
 #> $default
 #> $default$debug
 #> [1] "self self2"
-#>
-#>
+#> 
+#> 
 #> $other_config_parse
 #> $other_config_parse$raw
 #> [1] "yes no"
-#>
+#> 
 #> $other_config_parse$parsed
 #> [1] "yes no"
-#>
-#>
+#> 
+#> 
 #> $rcmd_parse
 #> $rcmd_parse$raw
-#> [1] "2017-07-21"
-#>
-#>
+#> [1] "2017-11-22"
+#> 
+#> 
 #> $mulitple_parse
 #> $mulitple_parse$raw
 #> [1] "configr, configr, yes, 1, config, config, no, 0"
-#>
+#> 
 #> $mulitple_parse$parsed
 #> [1] "configr, configr, yes, 1, config, config, no, 0"
 
@@ -402,8 +552,8 @@ raw <- c("a", "!!glue{1:5}", "c")
 list.raw <- list(glue = raw, nochange = 1:10)
 list.raw
 #> $glue
-#> [1] "a"           "!!glue{1:5}" "c"
-#>
+#> [1] "a"           "!!glue{1:5}" "c"          
+#> 
 #> $nochange
 #>  [1]  1  2  3  4  5  6  7  8  9 10
 expect.parsed.1 <- c("a", "1", "2", "3", "4", "5", "c")
@@ -411,7 +561,7 @@ expect.parsed.2 <- list(glue = expect.parsed.1, nochange = 1:10)
 parse.extra(list.raw, glue.parse = TRUE, glue.flag = "!!glue")
 #> $glue
 #> [1] "a" "1" "2" "3" "4" "5" "c"
-#>
+#> 
 #> $nochange
 #>  [1]  1  2  3  4  5  6  7  8  9 10
 ```
@@ -421,13 +571,13 @@ parse.extra(list.raw, glue.parse = TRUE, glue.flag = "!!glue")
 
 
 ```r
-config <- read.config(file = config.json, extra.list = list(debug = "self",
-    debug2 = "self2"), other.config = other.config)[sections]
+config <- read.config(file = config.json, extra.list = list(debug = "self", 
+  debug2 = "self2"), other.config = other.config)[sections]
 names(config)
 #> [1] "default"            "other_config_parse"
 #> [3] "rcmd_parse"         "mulitple_parse"
 config <- config.sections.del(config, "default")
 names(config)
-#> [1] "other_config_parse" "rcmd_parse"
+#> [1] "other_config_parse" "rcmd_parse"        
 #> [3] "mulitple_parse"
 ```

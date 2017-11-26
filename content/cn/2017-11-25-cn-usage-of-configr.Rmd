@@ -10,7 +10,7 @@ categories: tutorial
 
 ## 简介
 
-R包[configr](https://github.com/Miachol/configr) 是我写的并且上传到[CRAN](https://cran.r-project.org/)的第一个R包，主要功能是解析和生成配置文件（json/ini/yaml/toml），分别用到了[jsonlite](https://github.com/jeroen/jsonlite)，[ini](https://github.com/dvdscripter/ini)， [yaml](https://cran.r-project.org/web/packages/yaml/index.html)和[RcppTOML](https://github.com/eddelbuettel/rcpptoml)。
+[configr](https://github.com/Miachol/configr) 是我上传到[CRAN](https://cran.r-project.org/)的第一个R包，主要功能是解析和生成配置文件（json/ini/yaml/toml），分别用到了[jsonlite](https://github.com/jeroen/jsonlite)，[ini](https://github.com/dvdscripter/ini)， [yaml](https://cran.r-project.org/web/packages/yaml/index.html)和[RcppTOML](https://github.com/eddelbuettel/rcpptoml)。
 
 configr是一个整合的并且进行了解析扩展的R包（开发动机主要是我比较烦记函数，另外解析配置文件之后很多参数还要做进一步处理），本教程将介绍常见的几种配置文件格式，以及configr的基本用法。
 
@@ -87,7 +87,7 @@ content = "Hello World!"
 	<from>John</from>
 	<heading>Reminder</heading>
 	<body>Don't forget the meeting!</body>
-</note> 
+</note>
 ```
 
 参考：[XML-wiki](https://en.wikipedia.org/wiki/XML)
@@ -129,7 +129,7 @@ eval.config.sections(config.toml)
 # 注意：可以直接传递fromJSON/read.ini/readLines/yaml.load相关参数给read.config
 read.config(file = config.toml)
 
-# Get the same obj with config package, only get the 
+# Get the same obj with config package, only get the
 # 'default or R_CONFIG_ACTIVE config sets' in config.cfg or R_CONFIGFILE_ACTIVE
 eval.config(file = config.yaml)
 
@@ -145,8 +145,8 @@ eval.config.merge(file = config.toml, sections = c('default', 'comments'))
 
 # fetch.config可以导入http:// ftp://以及本地文件，
 # 它会将这些文件进行收集和读取，然后生成一个合并的R列表对象
-links <- c("https://raw.githubusercontent.com/JhuangLab/BioInstaller/master/inst/extdata/config/db/db_annovar.toml", 
-           "https://raw.githubusercontent.com/JhuangLab/BioInstaller/master/inst/extdata/config/db/db_main.toml", 
+links <- c("https://raw.githubusercontent.com/JhuangLab/BioInstaller/master/inst/extdata/config/db/db_annovar.toml",
+           "https://raw.githubusercontent.com/JhuangLab/BioInstaller/master/inst/extdata/config/db/db_main.toml",
            system.file('extdata', 'config.toml', package = "configr"))
 x <- fetch.config(links)
 x[c(1:5, length(x))]
@@ -195,21 +195,21 @@ read.config(file = config.json, extra.list = list(debug = "self", debug2 = "self
 
 sections <- c('default', 'other_config_parse')
 config.1[sections]
-read.config(file = config.json, extra.list = list(debug = "self", debug2 = "self2"), 
+read.config(file = config.json, extra.list = list(debug = "self", debug2 = "self2"),
   other.config = other.config)[sections]
 
 sections <- c('default', 'other_config_parse', 'rcmd_parse')
 # The followed two line command will return the same value
 config.1[sections]
-read.config(file = config.json, extra.list = list(debug = "self", debug2 = "self2"), 
+read.config(file = config.json, extra.list = list(debug = "self", debug2 = "self2"),
   other.config = other.config, rcmd.parse = T)[sections]
-parse.extra(config.1, extra.list = list(debug = "self", debug2 = "self2"), 
+parse.extra(config.1, extra.list = list(debug = "self", debug2 = "self2"),
   other.config = other.config, rcmd.parse = T)[sections]
 
 
 sections <- c('default', 'other_config_parse', 'rcmd_parse', 'mulitple_parse')
 config.1[sections]
-parse.extra(config.1, extra.list = list(debug = "self", debug2 = "self2", yes = "1", no = "0"), 
+parse.extra(config.1, extra.list = list(debug = "self", debug2 = "self2", yes = "1", no = "0"),
   other.config = other.config, rcmd.parse = T, bash.parse = F)[sections]
 
 # glue parse

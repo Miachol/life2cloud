@@ -57,7 +57,7 @@ As lead author:
 
 #### Journal
 
-- **LI Jian-feng**, et al. Analysis method based on the gene-panel sequencing data Journal of Shanghai Jiaotong University(Medical Science), 2017（Accepted）
+LI Jian-feng, YAN Tian-qi, CUI Bo-wen, KONG Jie, WANG Shu, CHEN Bing, HUANG Jin-yan. Analysis method based on the gene-panel sequencing data. Journal of Shanghai Jiaotong University(Medical Science). 2017, 37(11): 1575-.
 
 #### Colloquium papers
 

@@ -43,7 +43,7 @@ As lead author:
 
 ### Web service
 
-- Laboratory website [JhuangLab]http://bioinfo.rjh.com.cn/labs/jhuang/index.php)
+- Laboratory website [JhuangLab](http://bioinfo.rjh.com.cn/labs/jhuang/index.php)
 
 ## Publication
 

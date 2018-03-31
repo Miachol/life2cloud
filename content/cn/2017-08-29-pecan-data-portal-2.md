@@ -16,7 +16,7 @@ tags:
 
 ## 引言
 
-这是Pecan Data Portal系列教程的第二部分，这一部分主要将介绍Pecan Data Portal一系列可视化工具的使用，第一部分内容可以[点击这里](https://life2cloud.com/cn/2017/08/pecan_data_portal_1/)进行阅读。
+这是Pecan Data Portal系列教程的第二部分，这一部分主要将介绍Pecan Data Portal一系列可视化工具的使用，第一部分内容可以[点击这里](https://life2cloud.com/cn/2017/08/pecan_data_portal_1/)进行阅读。 （暂时未更新使用讲解，但你可以参考我提供的任务列表进行练习）
 
 在这一部分中的每个小节，我将会首先布置一些任务（推荐你先自行进行尝试完成），然后，我会根据这些任务进行操作，并进行介绍。
 

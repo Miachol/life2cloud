@@ -178,6 +178,12 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]"]"
 - sync-settings
 - tidy-markdown
 
+### Visual Studio Code
+
+[Visual Studio Code](https://code.visualstudio.com/docs) 是微软公司开发的一个开源IDE（伪装成编辑器），性能较Atom有所提升，是目前最受欢迎的文本编辑器之一。
+
+![image https://vip.biotrainee.com/assets/images/1-EqVgaBGCuXDw11ei.png](https://vip.biotrainee.com/assets/images/1-EqVgaBGCuXDw11ei.png)
+
 ### RStudio
 
 ![RStudio](https://github.com/Miachol/Writing-material/raw/master/blog/images/2017-09-26-daily-tools-text-editor/fig3.png)

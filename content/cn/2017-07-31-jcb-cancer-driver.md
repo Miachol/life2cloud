@@ -1,5 +1,5 @@
 ---
-title: Journal Club, Cacner Driver
+title: 肿瘤驱动事件识别算法
 author: Jianfeng Li
 date: '2017-07-31'
 slug: jcb-cancer-driver

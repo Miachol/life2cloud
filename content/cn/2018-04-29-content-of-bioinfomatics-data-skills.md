@@ -1,7 +1,7 @@
 ---
 title: 《Bioinformatics Data Skills》目录一览
 date: '2018-04-29'
-slug: functional-assays-to-the-rescue
+slug: content-of-bioinformatics-data-skills
 categories: Books
 tags: Bioinformatics
 notebook: Reading

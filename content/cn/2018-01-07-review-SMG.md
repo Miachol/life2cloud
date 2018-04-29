@@ -128,7 +128,7 @@ improve the prediction accuracy of each individual tool.
 
 - Sorting Intolerant from Tolerant (SIFT) 基于蛋白质序列的保守程度
 - Polymorphism Phenotyping v2 (PolyPhen-2) 整合了8种基于序列的和3种基于结构的特性
-- MutationAssessor 使用了熵理论去定义进化保守模式（多物种），只能用于错意点突变（limited to nonsynonymous SNVs）
+- MutationAssessor 使用了熵理论去定义进化保守模式（多物种），只能用于错义点突变（limited to nonsynonymous SNVs）
 - OncodriveFM 使用SIFT、PolyPhen-2和MutationAssessor去识别低频的SMGs
 - MutationTaster 可以用来评估突变对疾病的影响（使用进化保守性、丧失功能突变、蛋白质功能改变），不能评估跨越外显子和内含子的INDEL（>12碱基对）
 - CHASM使用49个预测性特征训练随机森林数模型，用来预测错误突变的功能影响

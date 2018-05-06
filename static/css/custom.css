@@ -65,11 +65,15 @@ table {
   min-width: 50%;
   max-width: 100%;
   margin: auto;
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 2px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
+}
+table tbody tr:first-child {
+  white-space: nowrap;
 }
 table thead th {
   border-bottom: 1px solid #e8e8e8;
+  white-space: nowrap;
 }
 main {
   display: block;

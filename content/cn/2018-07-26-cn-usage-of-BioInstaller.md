@@ -8,4 +8,4 @@ tags: tool
 notebook: Reading
 ---
 
-最近在准备BioInstaller的投稿论文，先放上来之后时间充裕一些写一篇来简单介绍。
+最近在准备BioInstaller的投稿论文，先放上来之后时间充裕一些写一篇来简单介绍。

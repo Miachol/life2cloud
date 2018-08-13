@@ -6,7 +6,6 @@ slug: cn-usage-of-configr
 output: rmarkdown::md_document
 tags: daily-tools
 categories: tutorial
-from_Rmd: yes
 ---
 
 ## 简介

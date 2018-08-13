@@ -6,10 +6,7 @@ slug: configuration-filetypes
 categories:
   - tutorial
 tags:
-  - YAML
-  - JSON
-  - TOML
-  - INI
+  - configr
 ---
 
 

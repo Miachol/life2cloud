@@ -2,15 +2,12 @@
 title: "Usage of configr"
 author: "Jianfeng Li"
 date: "2017-11-22"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Usage of configr}
-  %\VignetteEngine{knitr::rmarkdown}
-  \usepackage[utf8]{inputenc}
-from_Rmd: yes
+slug: usage-of-configr
+categories:
+  - tutorial
+tags:
+  - configr
 ---
-
-
 
 configr is an integrated parser package that json, ini, yaml and toml format files can now be processed. The vignette will walk you through the basics of using configr to extend existing parser in R.
 

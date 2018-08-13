@@ -51,7 +51,7 @@ rssLimit = 30
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", 
                 "js/fix-footnote.js", "js/math-code.js",
 		"js/qrcode.js", "js/social-share.js", "js/busuanzi.pure.mini.js"]
-    githubContentURL = "https://github.com/Miachol/life2cloud/edit/master/content/"
+    githubContentURL = "https://github.com/life2cloud/life2cloud/edit/master/content/"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"

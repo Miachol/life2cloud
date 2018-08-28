@@ -59,8 +59,8 @@ As lead author:
 - Bing Chen, Lu Jiang, Meng-Ling Zhong, **Jian-Feng Li**, Ben-Shang Li, Li-Jun Peng, Yu-Ting Dai, Bo-Wen Cui, Tian-Qi Yan, Wei-Na Zhang, Xiang-Qin Weng, Yin-Yin Xie, Jing Lu, Rui-Bao Ren, Su-Ning Chen, Jian-Da Hu, De-Pei Wu, Zhu Chen, Jing-Yan Tang, Jin-Yan Huang, Jian-Qing Mi, and Sai-Juan Chen. Identification of fusion genes and characterization of transcriptome features in T-cell acute lymphoblastic leukemia. **Proceedings of the National Academy of Sciences**. 2017. doi:10.1073/pnas.1717125115. PubMed PMID: 29279377.
 - An integrated quasispecies analysis pipeline towards precision medicine in viral infectious diseases. (Co-first, Submitted, 2018)
 - BioInstaller: a comprehensive R package to integrate bioinformatics resources. (Co-first, Submitted, 2018)
+- The transcriptional landscape of B-precursor acute lymphoblastic leukemia: An international collaborative study of 1,223 cases (Co-first, Submitted, 2018)
 - annovarR: a variant annotation and visualization system based on R and Shiny framework (Co-first, Preparing, 2018)
-- The transcriptional landscape of B-precursor acute lymphoblastic leukemia: An international collaborative study of 1,223 cases (Co-first, Preparing, 2018)
 
 ### In Chinese
 
